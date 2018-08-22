@@ -20,7 +20,18 @@ module.exports = {
   /*
   ** Build configuration
   */
+
+  plugins: ['~plugins/vuetify.js'],
+
+  css: [
+    {
+      src: '~assets/css/app.styl',
+      lang: 'styl'
+    }
+  ],
+
   build: {
+    vendor: ['vuetify'],
     /*
     ** Run ESLint on save
     */
@@ -36,4 +47,3 @@ module.exports = {
     }
   }
 }
-
